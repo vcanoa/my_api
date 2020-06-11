@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+   
+	<h2>Some data and correlators</h2>
+
+
+  <title>What are the keys to longevity?</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_mine.css')}}'>
+ 
+
+<div class=page>
+  <h1>What are the keys to longevity?</h1>
+  <div class=metanav>
+
+    <h4>
+      You can check different health variables in the map
+    </h4>
+     <h4>
+       If you click the stage you can see the variable distribute by county
+     </h4>
+      <h4>
+      Less see what the data says about longevity and life style
+    </h4>
+
+  </div>
+</div>
+
+
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Health_variables
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="longevity_m">Longevity</a></li>
+      <li><a href="obesity_m">Obesity</a></li>
+      <li><a href="diabetes_m">diabetes</a></li>
+      <li><a href="noexer_m">no_exercise</a></li>
+      <li><a href="no_hs_m">no_hs_diploma</a></li>
+      <li><a href="poverty_m">poverty</a></li>
+      <li><a href="unemployed_m">unemployed</a></li>
+      <li><a href="uninsured_m">Uninsured</a></li>
+       <li><a href="drug_m">drug_use</a></li>
+      <li><a href="depresion_m">Mayor depresion</a></li>
+    </ul>
+  </div>
+
+
+</div>
+
+
+<!-- 
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js/bootstrap.bundle.js"></script>
+  </body>
+
+
+</html>
+{% endblock %}
